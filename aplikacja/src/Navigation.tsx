@@ -35,13 +35,13 @@ const Navigation = () => {
         transition-all duration-700 ease-out
         ${scrolled 
           ? 'mt-2 mx-12' // Przy scroll: mniejszy odstęp od góry
-          : 'mt-0 mx-2' // Bez scroll: bardziej przyklejone do krawędzi
+          : 'mt-1 mx-2' // Bez scroll: minimalny odstęp od góry
         }
       `}
     >
       <div 
         className={`
-          flex items-center justify-between 
+          flex items-center justify-between h-12
           transition-all duration-700 ease-out
           ${scrolled 
             ? 'px-8 py-2 rounded-2xl shadow-2xl bg-black/60 backdrop-blur-md border border-gray-500/30' // Przy scroll: z tłem i obramowaniem
@@ -55,16 +55,21 @@ const Navigation = () => {
           <img 
             src="/logo transparent.png" 
             alt="Straylight Logo" 
-            className="w-12 h-12 object-contain transition-all duration-700 ease-out"
+            className="w-20 h-20 object-contain transition-all duration-700 ease-out"
           />
           <span className={`
-            text-lg font-medium transition-all duration-700 ease-out
+            text-xl font-orbitron font-bold transition-all duration-700 ease-out
+            bg-gradient-to-r from-white via-gray-100 to-cyan-200 bg-clip-text text-transparent
+            hover:from-cyan-200 hover:via-white hover:to-purple-200
+            drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]
+            hover:drop-shadow-[0_0_12px_rgba(100,255,255,0.6)]
+            cursor-default
             ${scrolled 
-              ? 'text-white' 
-              : 'text-white'
+              ? 'tracking-wide' 
+              : 'tracking-wider'
             }
           `}>
-            Straylight
+            STRAYLIGHT
           </span>
         </div>
 

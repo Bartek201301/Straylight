@@ -36,7 +36,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-0 items-center">
               {/* Lewa strona - tekst i przycisk */}
               <div className="h-[500px] flex flex-col justify-center space-y-6">
-                <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight font-inter">
                   Poznaj dziedzinę{' '}
                   <RotatingText
                     texts={['sztucznej', 'cyfrowej', 'mobilnej', 'quantum']}
@@ -52,7 +52,7 @@ function App() {
                   />{' '}
                   inteligencji
                 </h1>
-                <p className="text-xl text-white/80 leading-relaxed">
+                <p className="text-xl text-white/80 leading-relaxed font-source">
                   Dzielimy się najnowszymi trendami w programowaniu, designie i AI. 
                   Poznaj praktyczne rozwiązania, które pomogą Ci rozwijać swoje umiejętności 
                   i tworzyć innowacyjne projekty.
@@ -72,13 +72,18 @@ function App() {
                 </div>
               </div>
               
-              {/* Prawa strona - obrazek */}
+              {/* Prawa strona - filmik */}
               <div className="h-[500px] flex items-center justify-center md:justify-end">
-                <img 
-                  src="/obrazeknastrone.png" 
-                  alt="AI Robot - StrayLight Blog" 
+                <video 
+                  src="/Film bez tytułu ‐ Wykonano za pomocą Clipchamp.mp4" 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="h-full w-auto object-contain"
-                />
+                >
+                  Twoja przeglądarka nie obsługuje odtwarzania wideo.
+                </video>
               </div>
             </div>
           </div>
@@ -107,9 +112,9 @@ function App() {
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
-                className="text-4xl md:text-5xl font-bold text-white mb-6"
+                className="text-4xl md:text-5xl font-bold text-white mb-6 font-inter"
               />
-              <p className="text-xl text-white/80 max-w-3xl mx-auto">
+              <p className="text-xl text-white/80 max-w-3xl mx-auto font-source">
                 Tworzymy wyjątkowe doświadczenie czytelnicze łącząc pasję, rzetelność i nowoczesny design
               </p>
             </div>
@@ -135,10 +140,10 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5H9m12 0v12a4 4 0 01-4 4H9" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-4">
+                  <h3 className="text-2xl font-semibold text-white mb-4 font-inter">
                     Przemyślany Design
                   </h3>
-                  <p className="text-white/70 leading-relaxed">
+                  <p className="text-white/70 leading-relaxed font-source">
                     Każdy element naszej strony został zaprojektowany z myślą o komforcie czytania. 
                     Nowoczesny interfejs sprawia, że odkrywanie treści staje się przyjemnością.
                   </p>
@@ -165,10 +170,10 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-4">
+                  <h3 className="text-2xl font-semibold text-white mb-4 font-inter">
                     Oficjalne Źródła
                   </h3>
-                  <p className="text-white/70 leading-relaxed">
+                  <p className="text-white/70 leading-relaxed font-source">
                     Bazujemy wyłącznie na sprawdzonych, oficjalnych źródłach. Każda informacja jest 
                     weryfikowana, aby dostarczyć Ci rzetelną wiedzę bez dezinformacji.
                   </p>
@@ -195,10 +200,10 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-4">
+                  <h3 className="text-2xl font-semibold text-white mb-4 font-inter">
                     Pisane z Pasją
                   </h3>
-                  <p className="text-white/70 leading-relaxed">
+                  <p className="text-white/70 leading-relaxed font-source">
                     Nasze artykuły tworzą prawdziwi pasjonaci technologii i AI. Dzielimy się wiedzą 
                     z entuzjazmem i autentycznym zainteresowaniem tematami, które poruszamy.
                   </p>
@@ -218,9 +223,9 @@ function App() {
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
-                className="text-4xl md:text-5xl font-bold text-white mb-6"
+                className="text-4xl md:text-5xl font-bold text-white mb-6 font-inter"
               />
-              <p className="text-xl text-white/80 max-w-3xl mx-auto">
+              <p className="text-xl text-white/80 max-w-3xl mx-auto font-source">
                 Odkryj nasze najczęściej czytane treści o AI, technologii i ich wpływie na świat
               </p>
             </div>
@@ -244,12 +249,12 @@ function App() {
                 <div className="flex-1 flex flex-col justify-end space-y-4">
                   <div className="space-y-4">
                     <div className="mb-4">
-                      <span className="text-white/60 text-sm">Jan Kowalski • 3 dni temu</span>
+                      <span className="text-white/60 text-sm font-mono">Jan Kowalski • 3 dni temu</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight font-inter">
                       Jak AI zmienia przemysł obronny w 2024 roku
                     </h3>
-                    <p className="text-white/80 text-lg leading-relaxed">
+                    <p className="text-white/80 text-lg leading-relaxed font-source">
                       Analiza najnowszych trendów w wykorzystaniu sztucznej inteligencji w sektorze obronnym. 
                       Odkryj, jak autonomiczne systemy rewolucjonizują bezpieczeństwo narodowe.
                     </p>
@@ -257,8 +262,8 @@ function App() {
                   
                   <div className="flex items-center justify-between pt-6 border-t border-white/10">
                     <div className="flex items-center gap-2">
-                      <span className="px-3 py-1 bg-white/10 rounded-full text-white/70 text-xs">AI & Obronność</span>
-                      <span className="text-white/50 text-xs">• 8 min czytania</span>
+                      <span className="px-3 py-1 bg-white/10 rounded-full text-white/70 text-xs font-mono">AI & Obronność</span>
+                      <span className="text-white/50 text-xs font-mono">• 8 min czytania</span>
                     </div>
                     <svg className="w-5 h-5 text-white/50 group-hover:text-white/70 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -285,18 +290,18 @@ function App() {
                   {/* Treść artykułu */}
                   <div className="space-y-3">
                     <div className="mb-3">
-                      <span className="text-white/60 text-sm">Anna Nowak • 5 dni temu</span>
+                      <span className="text-white/60 text-sm font-mono">Anna Nowak • 5 dni temu</span>
                     </div>
-                    <h3 className="text-xl font-bold text-white leading-tight">
+                    <h3 className="text-xl font-bold text-white leading-tight font-inter">
                       Etyczne dylematy AI w medycynie
                     </h3>
-                    <p className="text-white/80 text-sm leading-relaxed">
+                    <p className="text-white/80 text-sm leading-relaxed font-source">
                       Jak sztuczna inteligencja wpływa na decyzje medyczne i jakie są konsekwencje etyczne.
                     </p>
                     
                     <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                      <span className="px-2 py-1 bg-white/10 rounded-full text-white/70 text-xs">Medycyna</span>
-                      <span className="text-white/50 text-xs">5 min</span>
+                      <span className="px-2 py-1 bg-white/10 rounded-full text-white/70 text-xs font-mono">Medycyna</span>
+                      <span className="text-white/50 text-xs font-mono">5 min</span>
                     </div>
                   </div>
                 </article>
@@ -317,18 +322,18 @@ function App() {
                   {/* Treść artykułu */}
                   <div className="space-y-3">
                     <div className="mb-3">
-                      <span className="text-white/60 text-sm">Piotr Wiśniewski • 1 tydzień temu</span>
+                      <span className="text-white/60 text-sm font-mono">Piotr Wiśniewski • 1 tydzień temu</span>
                     </div>
-                    <h3 className="text-xl font-bold text-white leading-tight">
+                    <h3 className="text-xl font-bold text-white leading-tight font-inter">
                       Quantum Computing: Przyszłość czy fantazja?
                     </h3>
-                    <p className="text-white/80 text-sm leading-relaxed">
+                    <p className="text-white/80 text-sm leading-relaxed font-source">
                       Odkryj potencjał komputerów kwantowych i ich wpływ na cyberbezpieczeństwo.
                     </p>
                     
                     <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                      <span className="px-2 py-1 bg-white/10 rounded-full text-white/70 text-xs">Quantum</span>
-                      <span className="text-white/50 text-xs">12 min</span>
+                      <span className="px-2 py-1 bg-white/10 rounded-full text-white/70 text-xs font-mono">Quantum</span>
+                      <span className="text-white/50 text-xs font-mono">12 min</span>
                     </div>
                   </div>
                 </article>
@@ -349,10 +354,10 @@ function App() {
             >
               
                               <div className="relative z-10">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-inter">
                     Otrzymuj najnowsze aktualizacje
                   </h2>
-                  <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+                  <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-source">
                     Zapisz się do newslettera, aby być na bieżąco z najnowszymi innowacjami ze świata AI i technologii.
                   </p>
                 
@@ -365,16 +370,16 @@ function App() {
                     <input
                       type="email"
                       placeholder="Adres email"
-                      className="w-full pl-12 pr-4 py-4 rounded-2xl border border-white/20 focus:border-white/40 focus:ring-2 focus:ring-white/20 focus:outline-none transition-all duration-200 text-white bg-white/10 placeholder-white/60"
+                      className="w-full pl-12 pr-4 py-4 rounded-2xl border border-white/20 focus:border-white/40 focus:ring-2 focus:ring-white/20 focus:outline-none transition-all duration-200 text-white bg-white/10 placeholder-white/60 font-source"
                     />
                   </div>
-                  <button className="px-8 py-4 bg-white hover:bg-white/90 text-black font-medium rounded-full transition-all duration-200 hover:scale-105 whitespace-nowrap border border-white hover:border-white/80">
+                  <button className="px-8 py-4 bg-white hover:bg-white/90 text-black font-medium rounded-full transition-all duration-200 hover:scale-105 whitespace-nowrap border border-white hover:border-white/80 font-source">
                     Zapisz się
                   </button>
                 </div>
                 
                 {/* Privacy info */}
-                <p className="text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+                <p className="text-sm text-white/60 max-w-xl mx-auto leading-relaxed font-source">
                   Akceptuję regulamin Straylight i potwierdzam, że moje informacje będą wykorzystywane zgodnie z 
                   <a href="#" className="text-white hover:text-white/80 underline mx-1">Polityką Prywatności</a>
                   Straylight.
@@ -385,11 +390,41 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="px-6 py-12 border-t border-white/10">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-white/60">
-              © 2024 StrayLight Blog. Wszystkie prawa zastrzeżone.
+        <footer className="border-t border-white/10 py-8">
+          <div className="max-w-4xl mx-auto px-6 text-center space-y-4">
+            {/* Logo i nazwa */}
+            <div className="flex flex-col items-center justify-center space-y-3 mb-6">
+              <img 
+                src="/logo transparent.png" 
+                alt="Straylight Logo" 
+                className="w-12 h-12 object-contain"
+              />
+              <span className="text-lg font-orbitron font-bold bg-gradient-to-r from-white via-gray-100 to-cyan-200 bg-clip-text text-transparent tracking-wider">
+                STRAYLIGHT
+              </span>
+            </div>
+            
+            {/* Podstrony */}
+            <div className="flex justify-center space-x-6 text-sm">
+              <a href="#home" className="text-white/70 hover:text-white transition-colors font-source">Home</a>
+              <a href="#artykuly" className="text-white/70 hover:text-white transition-colors font-source">Artykuły</a>
+            </div>
+
+            {/* Email */}
+            <p className="text-white/70 text-sm">
+              <a href="mailto:straylightcenter@gmail.com" className="hover:text-white transition-colors font-mono">
+                straylightcenter@gmail.com
+              </a>
             </p>
+
+            {/* Copyright i linki */}
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-xs text-white/60">
+              <span className="font-source">© 2025 StrayLight Blog. Wszystkie prawa zastrzeżone.</span>
+              <div className="flex space-x-3">
+                <a href="#polityka-prywatnosci" className="hover:text-white transition-colors font-source">Polityka Prywatności</a>
+                <a href="#regulamin" className="hover:text-white transition-colors font-source">Regulamin</a>
+              </div>
+            </div>
           </div>
         </footer>
       </main>

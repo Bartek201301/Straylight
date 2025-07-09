@@ -184,7 +184,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             pointer-events: none;
             display: grid;
             place-items: center;
-            z-index: 1;
+            z-index: 9999;
           }
           .effect.text {
             color: white;
@@ -304,7 +304,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
           }
         `}
       </style>
-      <div className="relative" ref={containerRef}>
+      <div className="relative overflow-visible" ref={containerRef}>
         <nav
           className="flex relative"
           style={{ transform: "translate3d(0,0,0.01px)" }}
