@@ -1,0 +1,53 @@
+📌 NAZWA PROJEKTU:
+Minimalistyczny Blog – aplikacja webowa z backendem opartym na Convex
+
+🎯 CEL PROJEKTU:
+Celem projektu jest stworzenie nowoczesnego, minimalistycznego bloga z interfejsem użytkownika zaprojektowanym w estetyce czarno-białej. Blog będzie umożliwiał publikację, edycję i przeglądanie postów, a jego struktura będzie czytelna, lekka i w pełni responsywna.
+
+---
+
+🛠️ TECHNOLOGIE:
+
+**Frontend:**
+- **React (z użyciem React Bits)** – do budowy dynamicznego interfejsu użytkownika.
+- **shadcn/ui** – biblioteka gotowych komponentów UI opartych na Tailwind CSS.
+- **Tailwind CSS** – do dokładnego stylowania interfejsu.
+
+**Backend:**
+- **Convex** – serverless backend do obsługi bazy danych, zapytań i synchronizacji danych w czasie rzeczywistym.
+
+---
+
+🎨 DESIGN / UI:
+
+- Styl graficzny: **minimalistyczny, czarno-biały**
+- Tło strony: **pełne czarne** (`#000000`)
+- Tekst, komponenty i elementy interfejsu: białe lub jasnoszare, z zachowaniem wysokiego kontrastu i czytelności.
+- Brak jakichkolwiek innych kolorów – tylko czerń, biel i odcienie szarości.
+- Estetyka bloga ma być nowoczesna i maksymalnie uproszczona.
+
+---
+
+🧠 ZASADY PRACY Z AI (Claude 4.0 Sonnet w Cursorze):
+
+- AI wykonuje wyłącznie to, co zostało wyraźnie opisane przez użytkownika.
+- AI **nie podejmuje samodzielnych decyzji** ani nie wprowadza zmian bez polecenia.
+- Jeśli AI czegoś nie wie lub potrzebuje danych (np. nazw komponentów, struktury, danych testowych) – **musi zadać pytanie użytkownikowi i poczekać na odpowiedź**.
+- Zakazane jest zgadywanie intencji użytkownika lub domyślanie się funkcji.
+
+---
+
+📌 FUNKCJE BLOGA:
+
+- Wyświetlanie listy postów (z datą, tytułem, krótkim opisem)
+- Przeglądanie pojedynczego posta w pełnym widoku
+- Tworzenie nowego posta
+- Edycja istniejącego posta
+- Usuwanie posta
+- Prosty panel do zarządzania treścią (dla autora/admina)
+- Obsługa bazy danych przez Convex (CRUD)
+- Możliwość rozbudowy o tagi, wyszukiwanie, komentarze itp. w kolejnych fazach
+
+---
+
+🗂️ PROPONOWANA STRUKTURA PROJEKTU:
