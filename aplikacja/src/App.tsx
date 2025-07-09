@@ -1,8 +1,15 @@
 import React from 'react';
 import Aurora from './Aurora';
 import Navigation from './Navigation';
+import GooeyNav from './GooeyNav';
+import RotatingText from './RotatingText';
 
 function App() {
+  // Przycisk dla hero sekcji
+  const heroButton = [
+    { label: "Sprawdź nowy artykuł", href: "#nowy-artykul" }
+  ];
+
   return (
     <div className="min-h-screen bg-black">
       <Aurora
@@ -12,20 +19,60 @@ function App() {
         speed={0.5}
       />
       <Navigation />
-      {/* Główna zawartość z większym paddingiem na górze dla lepszej widoczności nawigacji */}
-      <main className="relative z-10 pt-40">
+      {/* Główna zawartość z mniejszym paddingiem na górze */}
+      <main className="relative z-10 pt-8">
         {/* Hero sekcja */}
-        <section className="px-6 py-20 text-center">
-          <h1 className="text-6xl font-bold text-white mb-6">
-            StrayLight Blog
-          </h1>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Odkryj najnowsze trendy w technologii, programowaniu i designie. 
-            Dzielimy się wiedzą i inspiracjami dla developerów.
-          </p>
-          <button className="bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors">
-            Rozpocznij czytanie
-          </button>
+        <section className="px-6 py-4">
+          <div className="max-w-6xl mx-auto transform translate-x-12">
+            <div className="grid md:grid-cols-2 gap-0 items-center">
+              {/* Lewa strona - tekst i przycisk */}
+              <div className="h-[500px] flex flex-col justify-center space-y-6">
+                <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                  Poznaj dziedzinę{' '}
+                  <RotatingText
+                    texts={['sztucznej', 'cyfrowej', 'mobilnej', 'quantum']}
+                    mainClassName="px-3 py-1 bg-white text-black overflow-hidden rounded-md inline-block min-w-[9ch] w-fit text-center"
+                    staggerFrom="first"
+                    initial={{ y: "100%" }}
+                    animate={{ y: 0 }}
+                    exit={{ y: "-120%" }}
+                    staggerDuration={0.025}
+                    splitLevelClassName="overflow-hidden"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                    rotationInterval={2200}
+                  />{' '}
+                  inteligencji
+                </h1>
+                <p className="text-xl text-white/80 leading-relaxed">
+                  Dzielimy się najnowszymi trendami w programowaniu, designie i AI. 
+                  Poznaj praktyczne rozwiązania, które pomogą Ci rozwijać swoje umiejętności 
+                  i tworzyć innowacyjne projekty.
+                </p>
+                {/* Przycisk z animacją GooeyNav wyrównany do tekstu */}
+                <div className="-ml-4">
+                  <GooeyNav
+                    items={heroButton}
+                    particleCount={3}
+                    particleDistances={[90, 10]}
+                    particleR={100}
+                    initialActiveIndex={0}
+                    animationTime={600}
+                    timeVariance={300}
+                    colors={[1]}
+                  />
+                </div>
+              </div>
+              
+              {/* Prawa strona - obrazek */}
+              <div className="h-[500px] flex items-center justify-center md:justify-end">
+                <img 
+                  src="/obrazeknastrone.png" 
+                  alt="AI Robot - StrayLight Blog" 
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Sekcja z artykułami */}
