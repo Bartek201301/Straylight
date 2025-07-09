@@ -1,0 +1,141 @@
+{
+    "design_system_profile": {
+      "style_category": "modern_dark_features_section",
+      "visual_characteristics": {
+        "color_palette": {
+          "primary_background": "#000000",
+          "card_background": "#1a1a1a",
+          "text_primary": "#ffffff",
+          "text_secondary": "#a0a0a0",
+          "accent_elements": "#333333",
+          "border_subtle": "#2a2a2a"
+        },
+        "typography": {
+          "heading_primary": {
+            "weight": "600-700",
+            "size": "large",
+            "color": "white",
+            "alignment": "center"
+          },
+          "heading_secondary": {
+            "weight": "500-600",
+            "size": "medium",
+            "color": "white",
+            "alignment": "left"
+          },
+          "body_text": {
+            "weight": "400",
+            "size": "small-medium",
+            "color": "gray",
+            "line_height": "relaxed"
+          },
+          "subtitle": {
+            "weight": "400",
+            "size": "medium",
+            "color": "light_gray",
+            "alignment": "center"
+          }
+        },
+        "spacing": {
+          "section_padding": "large",
+          "card_padding": "medium-large",
+          "element_gap": "medium",
+          "card_gap": "medium"
+        },
+        "visual_effects": {
+          "background_pattern": "subtle_geometric_grid",
+          "card_treatment": "dark_elevated_panels",
+          "border_radius": "medium",
+          "shadows": "subtle_dark_elevation"
+        }
+      },
+      "layout_structure": {
+        "container_type": "full_width_section",
+        "content_alignment": "center",
+        "header_section": {
+          "title": "prominent_centered",
+          "subtitle": "descriptive_tagline",
+          "spacing": "generous_vertical"
+        },
+        "content_grid": {
+          "type": "three_column_grid",
+          "responsive_behavior": "stack_on_mobile",
+          "equal_height_cards": true,
+          "gap": "consistent_spacing"
+        },
+        "card_structure": {
+          "visual_element": "top_positioned_icon_or_graphic",
+          "title": "prominent_heading",
+          "description": "multi_line_body_text",
+          "layout": "vertical_stack"
+        }
+      },
+      "component_patterns": {
+        "feature_cards": {
+          "background": "dark_panel",
+          "padding": "generous_internal",
+          "border_radius": "rounded_corners",
+          "hover_states": "subtle_elevation_increase",
+          "content_hierarchy": [
+            "visual_indicator",
+            "feature_title",
+            "feature_description"
+          ]
+        },
+        "icon_treatment": {
+          "style": "minimalist_outlined",
+          "color": "muted_white",
+          "size": "medium",
+          "positioning": "top_right_corner"
+        },
+        "visual_graphics": {
+          "style": "abstract_geometric",
+          "color": "monochromatic_gray",
+          "purpose": "decorative_context"
+        }
+      },
+      "interaction_patterns": {
+        "hover_effects": {
+          "cards": "subtle_lift_and_glow",
+          "duration": "smooth_transition",
+          "easing": "ease_in_out"
+        },
+        "focus_states": "accessible_outline",
+        "click_targets": "entire_card_clickable"
+      },
+      "responsive_behavior": {
+        "desktop": "three_column_grid",
+        "tablet": "two_column_grid",
+        "mobile": "single_column_stack",
+        "breakpoints": "standard_responsive"
+      },
+      "accessibility_considerations": {
+        "contrast_ratios": "wcag_aa_compliant",
+        "focus_indicators": "visible_outline",
+        "semantic_structure": "proper_heading_hierarchy",
+        "screen_reader": "descriptive_alt_text"
+      },
+      "design_principles": {
+        "aesthetic": "modern_minimalist",
+        "hierarchy": "clear_visual_prominence",
+        "consistency": "systematic_spacing_and_typography",
+        "balance": "symmetrical_grid_layout",
+        "emphasis": "contrast_through_typography_weight"
+      },
+      "implementation_guidelines": {
+        "css_approach": "utility_first_or_component_based",
+        "grid_system": "css_grid_or_flexbox",
+        "dark_mode": "primary_design_mode",
+        "animation_library": "framer_motion_or_css_transitions",
+        "responsive_strategy": "mobile_first_approach"
+      },
+      "content_structure_template": {
+        "section_title": "2-3_words_impactful",
+        "section_subtitle": "descriptive_value_proposition",
+        "feature_count": "3_primary_features",
+        "feature_title_length": "2-4_words",
+        "feature_description_length": "2-3_sentences",
+        "tone": "professional_confident"
+      }
+    }
+  }
