@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import GooeyNav from './GooeyNav';
+import { Link, useLocation } from 'react-router-dom';
+import SearchInput from './components/SearchInput';
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
-
-  // Items dla GooeyNav
-  const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Artykuły", href: "#artykuly" },
-  ];
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,11 +69,14 @@ const Navigation = () => {
           </span>
         </div>
 
-        {/* Prawa strona - GitHub link i GooeyNav */}
+        {/* Prawa strona - Navigation links */}
         <div className="flex items-center space-x-4">
+          {/* Komponent wyszukiwania (tylko na stronie artykułów) */}
+          {location.pathname === '/artykuly' && <SearchInput />}
+          
           {/* Licznik artykułów */}
-          <a 
-            href="#artykuly" 
+          <Link 
+            to="/artykuly" 
             className={`
               flex items-center space-x-2 transition-all duration-700 ease-out
               ${scrolled 
@@ -95,19 +94,31 @@ const Navigation = () => {
             <span className="text-sm font-medium">
               3
             </span>
-          </a>
+          </Link>
 
-          {/* GooeyNav z przyciskami */}
-          <GooeyNav
-            items={navItems}
-            particleCount={3}
-            particleDistances={[90, 10]}
-            particleR={100}
-            initialActiveIndex={0}
-            animationTime={600}
-            timeVariance={300}
-            colors={[1]}
-          />
+          {/* Navigation buttons */}
+          <div className="flex items-center space-x-2">
+            <Link 
+              to="/" 
+              className={`px-4 py-2 font-medium transition-all duration-300 rounded-lg ${
+                location.pathname === '/' 
+                  ? 'bg-white text-black shadow-lg' 
+                  : 'text-white/80 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/artykuly" 
+              className={`px-4 py-2 font-medium transition-all duration-300 rounded-lg ${
+                location.pathname === '/artykuly' 
+                  ? 'bg-white text-black shadow-lg' 
+                  : 'text-white/80 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              Artykuły
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

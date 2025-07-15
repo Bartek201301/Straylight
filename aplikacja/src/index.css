@@ -17,4 +17,41 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  /* Stylizacja scrollbara */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Ukryj poziomy scrollbar */
+  ::-webkit-scrollbar:horizontal {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0;
+  }
+
+  /* Firefox scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #000000;
+    overflow-x: hidden;
+  }
+
+  /* Ukryj poziomy scrollbar globalnie */
+  body {
+    overflow-x: hidden;
+  }
 }
