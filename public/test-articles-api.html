@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Articles API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      pre {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .result {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test Articles API Endpoint</h1>
+
+    <div>
+      <h3>GET Tests</h3>
+      <button onclick="testBasicEndpoint()">
+        Test Basic GET /api/articles
+      </button>
+      <button onclick="testWithFilters()">Test with Filters</button>
+      <button onclick="testPagination()">Test Pagination</button>
+      <button onclick="testSearch()">Test Search</button>
+
+      <h3>DEBUG Tests</h3>
+      <button onclick="testCreateUser()">Test Create/Check User in DB</button>
+
+      <h3>POST Tests</h3>
+      <button onclick="testCreateArticle()">Test Create Article (Draft)</button>
+      <button onclick="testCreatePublishedArticle()">
+        Test Create Published Article
+      </button>
+      <button onclick="testValidationError()">Test Validation Error</button>
+      <button onclick="testCreateWithTags()">
+        Test Create Article with Tags
+      </button>
+
+      <h3>PUT Tests</h3>
+      <button onclick="testUpdateArticle()">Test Update Article</button>
+      <button onclick="testPartialUpdate()">Test Partial Update</button>
+      <button onclick="testStatusChange()">
+        Test Status Change (Draft → Published)
+      </button>
+      <button onclick="testUpdateNonExistent()">
+        Test Update Non-Existent (404)
+      </button>
+      <button onclick="testUpdatePermission()">Test Permission Error</button>
+
+      <h3>DELETE Tests (Archive Article)</h3>
+      <button onclick="testDeleteArticle()">Test Archive Article</button>
+      <button onclick="testDeleteNonExistent()">
+        Test Delete Non-Existent (404)
+      </button>
+      <button onclick="testDeleteAlready()">
+        Test Delete Already Archived (409)
+      </button>
+      <button onclick="testDeleteInvalidId()">
+        Test Delete Invalid ID (400)
+      </button>
+
+      <h3>VALIDATION Tests (Zod Middleware)</h3>
+      <button onclick="testValidationMissingTitle()">
+        Test Missing Title (400)
+      </button>
+      <button onclick="testValidationInvalidTags()">
+        Test Invalid Tags (400)
+      </button>
+      <button onclick="testValidationTitleTooLong()">
+        Test Title Too Long (400)
+      </button>
+      <button onclick="testValidationInvalidStatus()">
+        Test Invalid Status (400)
+      </button>
+      <button onclick="testValidationInvalidQueryParams()">
+        Test Invalid Query Params (400)
+      </button>
+      <button onclick="testValidationEmptyUpdate()">
+        Test Empty Update Body (400)
+      </button>
+
+      <div
+        style="
+          margin: 10px 0;
+          padding: 10px;
+          background: #f0f0f0;
+          border-radius: 5px;
+        "
+      >
+        <strong>Last Created Article ID:</strong>
+        <span id="lastArticleId">None - Create an article first</span>
+      </div>
+    </div>
+
+    <div id="result" class="result">
+      <h3>Result:</h3>
+      <pre id="output">Click a button to test the API...</pre>
+    </div>
+
+    <script>
+      // Global variable to store last created article ID for PUT tests
+      let lastCreatedArticleId = null;
+
+      async function testAPI(url, description) {
+        const output = document.getElementById('output');
+        try {
+          output.textContent = `Testing ${description}...\nURL: ${url}\n\n`;
+
+          const response = await fetch(url);
+          const data = await response.json();
+
+          output.textContent =
+            `${description}\n` +
+            `Status: ${response.status}\n` +
+            `URL: ${url}\n\n` +
+            JSON.stringify(data, null, 2);
+        } catch (error) {
+          output.textContent = `Error testing ${description}:\n${error.message}`;
+        }
+      }
+
+      function testBasicEndpoint() {
+        testAPI('/api/articles', 'Basic GET request');
+      }
+
+      function testWithFilters() {
+        testAPI(
+          '/api/articles?status=published&limit=5',
+          'GET with status and limit filters'
+        );
+      }
+
+      function testPagination() {
+        testAPI(
+          '/api/articles?limit=3&offset=0&order=asc',
+          'GET with pagination'
+        );
+      }
+
+      function testSearch() {
+        testAPI('/api/articles?search=test&limit=10', 'GET with search term');
+      }
+
+      // Debug function to test user creation
+      function testCreateUser() {
+        const userData = {
+          author_id: 'f72da995-aede-4dc0-9e9d-18f985615113', // Real user UUID from Supabase Auth
+        };
+        testPOST(
+          '/api/debug-user',
+          userData,
+          'DEBUG Create/Check User in public.users table'
+        );
+      }
+
+      // POST API testing functions
+      async function testPOST(url, data, description) {
+        const output = document.getElementById('output');
+        try {
+          output.textContent = `Testing ${description}...\nURL: ${url}\nData: ${JSON.stringify(data, null, 2)}\n\n`;
+
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          });
+
+          const result = await response.json();
+
+          output.textContent =
+            `${description}\n` +
+            `Status: ${response.status}\n` +
+            `URL: ${url}\n` +
+            `Request Data: ${JSON.stringify(data, null, 2)}\n\n` +
+            `Response: ${JSON.stringify(result, null, 2)}`;
+
+          // Store article ID if this was a successful POST request and we got an ID back
+          if (
+            response.status === 201 &&
+            result.success &&
+            result.data &&
+            result.data.id
+          ) {
+            lastCreatedArticleId = result.data.id;
+            document.getElementById('lastArticleId').textContent =
+              result.data.id;
+          }
+        } catch (error) {
+          output.textContent = `Error testing ${description}:\n${error.message}`;
+        }
+      }
+
+      function testCreateArticle() {
+        const articleData = {
+          title: 'Test Article ' + Date.now(),
+          body_md:
+            '# Test Article\n\nThis is a **test article** created via API.\n\nIt contains some *markdown* formatting and `code`.',
+          author_id: 'f72da995-aede-4dc0-9e9d-18f985615113', // Real user UUID from Supabase Auth
+        };
+        testPOST('/api/articles', articleData, 'POST Create Article (Draft)');
+      }
+
+      function testCreatePublishedArticle() {
+        const articleData = {
+          title: 'Published Test Article ' + Date.now(),
+          body_md:
+            '# Published Article\n\nThis is a **published test article** created via API.\n\n## Features\n- Auto-generated excerpt\n- Published status\n- Proper timestamps',
+          author_id: 'f72da995-aede-4dc0-9e9d-18f985615113', // Real user UUID from Supabase Auth
+          status: 'published',
+          excerpt: 'This is a custom excerpt for the published article.',
+        };
+        testPOST('/api/articles', articleData, 'POST Create Published Article');
+      }
+
+      function testValidationError() {
+        const invalidData = {
+          title: '', // Empty title should cause validation error
+          body_md: 'Some content',
+          author_id: 'f72da995-aede-4dc0-9e9d-18f985615113', // Real user UUID from Supabase Auth
+        };
+        testPOST('/api/articles', invalidData, 'POST Validation Error Test');
+      }
+
+      function testCreateWithTags() {
+        const articleData = {
+          title: 'Article with Tags ' + Date.now(),
+          body_md:
+            '# Tagged Article\n\nThis article demonstrates **tag functionality**.\n\n## Tags\nThis article is tagged with multiple categories for better organization.',
+          author_id: 'f72da995-aede-4dc0-9e9d-18f985615113', // Real user UUID from Supabase Auth
+          status: 'pending',
+          tags: ['javascript', 'api', 'tutorial', 'test'],
+          excerpt: 'An article demonstrating the tagging system in action.',
+        };
+        testPOST('/api/articles', articleData, 'POST Create Article with Tags');
+      }
+
+      // PUT API testing functions
+      async function testPUT(url, data, description) {
+        const output = document.getElementById('output');
+        try {
+          output.textContent = `Testing ${description}...\nURL: ${url}\nData: ${JSON.stringify(data, null, 2)}\n\n`;
+
+          const response = await fetch(url, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          });
+
+          const result = await response.json();
+
+          output.textContent =
+            `${description}\n` +
+            `Status: ${response.status}\n` +
+            `URL: ${url}\n` +
+            `Request Data: ${JSON.stringify(data, null, 2)}\n\n` +
+            `Response: ${JSON.stringify(result, null, 2)}`;
+        } catch (error) {
+          output.textContent = `Error testing ${description}:\n${error.message}`;
+        }
+      }
+
+      function testUpdateArticle() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first using POST tests.';
+          return;
+        }
+
+        const updateData = {
+          title: 'Updated Article Title ' + Date.now(),
+          body_md:
+            '# Updated Article\n\nThis article was **updated** via PUT request.\n\n## New Content\nThe content has been completely refreshed with new information.',
+          status: 'pending',
+          tags: ['updated', 'api', 'test'],
+        };
+        testPUT(
+          `/api/articles/${lastCreatedArticleId}`,
+          updateData,
+          'PUT Update Article (Complete)'
+        );
+      }
+
+      function testPartialUpdate() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first using POST tests.';
+          return;
+        }
+
+        const partialData = {
+          title: 'Partially Updated ' + Date.now(),
+          tags: ['partial', 'update'],
+          // Note: only updating title and tags, leaving other fields unchanged
+        };
+        testPUT(
+          `/api/articles/${lastCreatedArticleId}`,
+          partialData,
+          'PUT Partial Update (Title + Tags only)'
+        );
+      }
+
+      function testStatusChange() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first using POST tests.';
+          return;
+        }
+
+        const statusData = {
+          status: 'published',
+          excerpt: 'This article was just published via API update!',
+        };
+        testPUT(
+          `/api/articles/${lastCreatedArticleId}`,
+          statusData,
+          'PUT Status Change (Draft → Published)'
+        );
+      }
+
+      function testUpdateNonExistent() {
+        const fakeId = '00000000-0000-4000-8000-000000000000'; // Valid UUID format but non-existent
+        const updateData = {
+          title: 'This should fail',
+          body_md: "This article doesn't exist",
+        };
+        testPUT(
+          `/api/articles/${fakeId}`,
+          updateData,
+          'PUT Update Non-Existent Article (404 Test)'
+        );
+      }
+
+      function testUpdatePermission() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first using POST tests.';
+          return;
+        }
+
+        const unauthorizedData = {
+          title: 'Unauthorized Update',
+          author_id: '000e4567-e89b-12d3-a456-426614174999', // Different UUID - should trigger permission error
+        };
+        testPUT(
+          `/api/articles/${lastCreatedArticleId}`,
+          unauthorizedData,
+          'PUT Permission Error Test (403)'
+        );
+      }
+
+      // DELETE Test Functions
+      async function testDELETE(url, description) {
+        const output = document.getElementById('output');
+        try {
+          output.textContent = `Testing ${description}...\nURL: ${url}\nMethod: DELETE\n\n`;
+
+          const response = await fetch(url, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          });
+
+          const data = await response.json();
+
+          let resultText =
+            `${description}\n` +
+            `Status: ${response.status}\n` +
+            `URL: ${url}\n` +
+            `Method: DELETE\n\n` +
+            `Response:\n${JSON.stringify(data, null, 2)}`;
+
+          if (response.ok) {
+            resultText += '\n\n✅ SUCCESS - Article archived successfully';
+          } else {
+            resultText += '\n\n❌ ERROR - Expected behavior for testing';
+          }
+
+          output.textContent = resultText;
+        } catch (error) {
+          output.textContent = `Error testing ${description}:\n${error.message}`;
+        }
+      }
+
+      function testDeleteArticle() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first using POST tests.';
+          return;
+        }
+        testDELETE(
+          `/api/articles/${lastCreatedArticleId}`,
+          'DELETE Article (Archive)'
+        );
+      }
+
+      function testDeleteNonExistent() {
+        const fakeId = '00000000-0000-4000-8000-000000000000'; // Valid UUID format but non-existent
+        testDELETE(
+          `/api/articles/${fakeId}`,
+          'DELETE Non-Existent Article (404 Test)'
+        );
+      }
+
+      function testDeleteAlready() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create and delete an article first.';
+          return;
+        }
+        // This will test archiving the same article twice (should return 409 on second attempt)
+        testDELETE(
+          `/api/articles/${lastCreatedArticleId}`,
+          'DELETE Already Archived Article (409 Test)'
+        );
+      }
+
+      function testDeleteInvalidId() {
+        const invalidId = 'not-a-number';
+        testDELETE(
+          `/api/articles/${invalidId}`,
+          'DELETE Invalid ID (400 Test)'
+        );
+      }
+
+      // VALIDATION Test Functions
+      function testValidationMissingTitle() {
+        const invalidData = {
+          // Missing required title field
+          body_md: 'This article has content but no title',
+          author_id: '550e8400-e29b-41d4-a716-446655440000', // Valid UUID format
+        };
+        testPOST(
+          '/api/articles',
+          invalidData,
+          'POST Missing Title - Zod Validation (400)'
+        );
+      }
+
+      function testValidationInvalidTags() {
+        const invalidData = {
+          title: 'Test Article',
+          body_md: 'This is test content',
+          author_id: '550e8400-e29b-41d4-a716-446655440000',
+          tags: ['valid', 'invalid tag with spaces!', 'another@invalid'], // Invalid tag formats
+        };
+        testPOST(
+          '/api/articles',
+          invalidData,
+          'POST Invalid Tags Format - Zod Validation (400)'
+        );
+      }
+
+      function testValidationTitleTooLong() {
+        const longTitle = 'A'.repeat(250); // Over 200 character limit
+        const invalidData = {
+          title: longTitle,
+          body_md: 'This is test content',
+          author_id: '550e8400-e29b-41d4-a716-446655440000',
+        };
+        testPOST(
+          '/api/articles',
+          invalidData,
+          'POST Title Too Long - Zod Validation (400)'
+        );
+      }
+
+      function testValidationInvalidStatus() {
+        const invalidData = {
+          title: 'Test Article',
+          body_md: 'This is test content',
+          author_id: '550e8400-e29b-41d4-a716-446655440000',
+          status: 'invalid_status', // Not one of: draft, pending, published, archived
+        };
+        testPOST(
+          '/api/articles',
+          invalidData,
+          'POST Invalid Status - Zod Validation (400)'
+        );
+      }
+
+      async function testValidationInvalidQueryParams() {
+        const output = document.getElementById('output');
+        try {
+          output.textContent = 'Testing invalid query parameters...\n';
+
+          // Test invalid limit (too high)
+          const url = '/api/articles?limit=999&offset=-5&status=invalid_status';
+
+          const response = await fetch(url);
+          const data = await response.json();
+
+          let resultText =
+            'GET Invalid Query Parameters - Zod Validation\n' +
+            `Status: ${response.status}\n` +
+            `URL: ${url}\n\n` +
+            `Response:\n${JSON.stringify(data, null, 2)}`;
+
+          if (response.status === 400) {
+            resultText += '\n\n✅ SUCCESS - Query validation working correctly';
+          } else {
+            resultText += '\n\n❌ UNEXPECTED - Should return 400';
+          }
+
+          output.textContent = resultText;
+        } catch (error) {
+          output.textContent = `Error testing invalid query params:\n${error.message}`;
+        }
+      }
+
+      function testValidationEmptyUpdate() {
+        if (!lastCreatedArticleId) {
+          document.getElementById('output').textContent =
+            'No article ID available. Please create an article first.';
+          return;
+        }
+
+        const emptyData = {}; // Empty object - Zod requires at least one field
+        testPUT(
+          `/api/articles/${lastCreatedArticleId}`,
+          emptyData,
+          'PUT Empty Update Body - Zod Validation (400)'
+        );
+      }
+    </script>
+  </body>
+</html>

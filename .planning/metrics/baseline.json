@@ -1,0 +1,14 @@
+{
+  "sourceFileCount": 403,
+  "sourceDirectoryCount": 175,
+  "totalLOC": 107256,
+  "productionDependencies": 36,
+  "devDependencies": 21,
+  "routeCount": 100,
+  "typescriptErrors": 0,
+  "eslintWarnings": 387,
+  "eslintErrors": 0,
+  "circularDependencies": 0,
+  "buildTimeMs": 117266,
+  "collectedAt": "2026-02-17T20:58:44.857Z"
+}

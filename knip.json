@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+    "src/app/**/loading.tsx",
+    "src/app/**/error.tsx",
+    "src/app/**/not-found.tsx"
+  ],
+  "ignoreFiles": [
+    ".claude/**",
+    "supabase/functions/**",
+    "test-*.js",
+    "scripts/**"
+  ],
+  "ignoreDependencies": ["@types/*"]
+}

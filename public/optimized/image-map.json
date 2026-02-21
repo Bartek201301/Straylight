@@ -1,0 +1,1080 @@
+{
+  "sztucznainteligencja": {
+    "original": {
+      "src": "/sztucznainteligencja.jpg",
+      "width": 7282,
+      "height": 4096,
+      "size": 6349473
+    },
+    "optimized": [
+      {
+        "src": "/optimized/sztucznainteligencja-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 180,
+        "size": 9510
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 360,
+        "size": 26312
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 576,
+        "size": 49432
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1920.webp",
+        "format": "webp",
+        "width": 1920,
+        "height": 1080,
+        "size": 109038
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 180,
+        "size": 10856
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 360,
+        "size": 26169
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 576,
+        "size": 46627
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1920.avif",
+        "format": "avif",
+        "width": 1920,
+        "height": 1080,
+        "size": 92729
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 180,
+        "size": 10938
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 360,
+        "size": 32370
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 576,
+        "size": 65916
+      },
+      {
+        "src": "/optimized/sztucznainteligencja-1920.jpg",
+        "format": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size": 159776
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAMAAADNLv/0AAAAD1BMVEUIITcDESILMEoGRWMQXHwiCUSkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAKklEQVR4nDXKwQ0AMAyDQGyy/8xVo/Z3QgAqSQJ1xsLjtJ+vUu2dt69yAA2DAGAA37a7AAAAAElFTkSuQmCC"
+  },
+  "quantiumcomputing": {
+    "original": {
+      "src": "/quantiumcomputing.jpg",
+      "width": 7680,
+      "height": 4320,
+      "size": 4056972
+    },
+    "optimized": [
+      {
+        "src": "/optimized/quantiumcomputing-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 180,
+        "size": 10670
+      },
+      {
+        "src": "/optimized/quantiumcomputing-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 360,
+        "size": 31506
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 576,
+        "size": 67106
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1920.webp",
+        "format": "webp",
+        "width": 1920,
+        "height": 1080,
+        "size": 186912
+      },
+      {
+        "src": "/optimized/quantiumcomputing-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 180,
+        "size": 16602
+      },
+      {
+        "src": "/optimized/quantiumcomputing-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 360,
+        "size": 44405
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 576,
+        "size": 90666
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1920.avif",
+        "format": "avif",
+        "width": 1920,
+        "height": 1080,
+        "size": 240072
+      },
+      {
+        "src": "/optimized/quantiumcomputing-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 180,
+        "size": 11901
+      },
+      {
+        "src": "/optimized/quantiumcomputing-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 360,
+        "size": 36233
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 576,
+        "size": 78981
+      },
+      {
+        "src": "/optimized/quantiumcomputing-1920.jpg",
+        "format": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size": 232728
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAMAAADNLv/0AAAALVBMVEUVExQhGhxEMCwwIB6LVjZtQzExLja1cTxWPzlYW2JpUUehdFiJfX6Ca156e4LQTmLAAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAOElEQVR4nB3JyRHAMAwDsSUlWb6S/svNTPAF8nrvXWsE8n7O2XMIYmZ3OoBwdpcFKCrzf5CrPMQHLAsBErGR50YAAAAASUVORK5CYII="
+  },
+  "maciek profilowe": {
+    "original": {
+      "src": "/maciek profilowe.jpg",
+      "width": 1080,
+      "height": 1080,
+      "size": 249429
+    },
+    "optimized": [
+      {
+        "src": "/optimized/maciek profilowe-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 32030
+      },
+      {
+        "src": "/optimized/maciek profilowe-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 94876
+      },
+      {
+        "src": "/optimized/maciek profilowe-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 175946
+      },
+      {
+        "src": "/optimized/maciek profilowe-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 40577
+      },
+      {
+        "src": "/optimized/maciek profilowe-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 115162
+      },
+      {
+        "src": "/optimized/maciek profilowe-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 206199
+      },
+      {
+        "src": "/optimized/maciek profilowe-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 29368
+      },
+      {
+        "src": "/optimized/maciek profilowe-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 96786
+      },
+      {
+        "src": "/optimized/maciek profilowe-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 196941
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGFBMVEWRhXOFd2V3a16Oel+glYRrXlVfUkGwpZPjNbkLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAO0lEQVR4nC2KQQ7AAAjCCqL+/8fL3JrQ9AD1IQmpCkoCJDZlQmR2X/2JsgSRcLv3Ycnzyrh7Zuxuri4fMNYBA4H7yEkAAAAASUVORK5CYII="
+  },
+  "kai profilowe": {
+    "original": {
+      "src": "/kai profilowe.jpg",
+      "width": 1080,
+      "height": 1080,
+      "size": 229703
+    },
+    "optimized": [
+      {
+        "src": "/optimized/kai profilowe-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 25304
+      },
+      {
+        "src": "/optimized/kai profilowe-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 84074
+      },
+      {
+        "src": "/optimized/kai profilowe-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 161844
+      },
+      {
+        "src": "/optimized/kai profilowe-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 37842
+      },
+      {
+        "src": "/optimized/kai profilowe-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 109094
+      },
+      {
+        "src": "/optimized/kai profilowe-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 195100
+      },
+      {
+        "src": "/optimized/kai profilowe-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 24801
+      },
+      {
+        "src": "/optimized/kai profilowe-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 83776
+      },
+      {
+        "src": "/optimized/kai profilowe-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 177196
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAS1BMVEUtMEBISFplW2W4ln+aiEujm01AQF4sMlk3OFqdmDi+uWyxrTaKeU03NUpwbHKKgXennnGdkniih356cXe8sYRcXEmkema8wJm2q0p9dzJqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVklEQVR4nB3GWxbAEAwFwIuEBPVudf8r7dH5GmhKiTLHvaGqmjO9MYKV6HmIEyO21p1znG+s1ccYrt9Aq8VaO4sBqvUiYswFVBNCELkATH/qT8tfAfAB34gDmPUcCTAAAAAASUVORK5CYII="
+  },
+  "julian profiowe": {
+    "original": {
+      "src": "/julian profiowe.jpg",
+      "width": 2048,
+      "height": 2048,
+      "size": 880771
+    },
+    "optimized": [
+      {
+        "src": "/optimized/julian profiowe-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 18034
+      },
+      {
+        "src": "/optimized/julian profiowe-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 60898
+      },
+      {
+        "src": "/optimized/julian profiowe-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 150152
+      },
+      {
+        "src": "/optimized/julian profiowe-1920.webp",
+        "format": "webp",
+        "width": 1920,
+        "height": 1920,
+        "size": 437930
+      },
+      {
+        "src": "/optimized/julian profiowe-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 24616
+      },
+      {
+        "src": "/optimized/julian profiowe-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 82376
+      },
+      {
+        "src": "/optimized/julian profiowe-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 199551
+      },
+      {
+        "src": "/optimized/julian profiowe-1920.avif",
+        "format": "avif",
+        "width": 1920,
+        "height": 1920,
+        "size": 560251
+      },
+      {
+        "src": "/optimized/julian profiowe-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 19790
+      },
+      {
+        "src": "/optimized/julian profiowe-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 65824
+      },
+      {
+        "src": "/optimized/julian profiowe-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 157531
+      },
+      {
+        "src": "/optimized/julian profiowe-1920.jpg",
+        "format": "jpeg",
+        "width": 1920,
+        "height": 1920,
+        "size": 471284
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAVFBMVEWYuNdtgZOHq81UVFuGn7NZYGpXT09qXVVfcYNYhbZ8bG85HSaTByl6BCFpksJDd7NoPUx1GTJSCx+nxON2nsc2aqqNhoo7OkR+NkulAyouZaVYKTrISBqjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nBXBBxKAIBAEsAW8Rge7/v+fjgk2rKjW9v2BxwpfzVqDB+C3amZYfk5VFeqcUwrnyQhERKGnlMDMgfs1ZoKISB85lwmRGK9R8l0g8TjiO/NdPsWvBAyQp9rwAAAAAElFTkSuQmCC"
+  },
+  "bartek profile": {
+    "original": {
+      "src": "/bartek profile.jpg",
+      "width": 1080,
+      "height": 1080,
+      "size": 130788
+    },
+    "optimized": [
+      {
+        "src": "/optimized/bartek profile-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 8134
+      },
+      {
+        "src": "/optimized/bartek profile-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 25696
+      },
+      {
+        "src": "/optimized/bartek profile-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 53866
+      },
+      {
+        "src": "/optimized/bartek profile-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 11167
+      },
+      {
+        "src": "/optimized/bartek profile-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 37773
+      },
+      {
+        "src": "/optimized/bartek profile-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 72071
+      },
+      {
+        "src": "/optimized/bartek profile-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 12214
+      },
+      {
+        "src": "/optimized/bartek profile-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 40063
+      },
+      {
+        "src": "/optimized/bartek profile-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 87049
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAHlBMVEVOU1l9fHqIioeUj4arrKphZGiZmZZtZmF0c3HS1NRx5Y8sAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nE3KuRHAMAwDMD6WRO+/cE65FOlQAPd0S3YfLEl9FBN6KaYqL1kFzLJZAEaN086ShGwuU5C8Y+bPB1kpAXzUq2eZAAAAAElFTkSuQmCC"
+  },
+  "automatyzacjaprocesow": {
+    "original": {
+      "src": "/automatyzacjaprocesow.jpg",
+      "width": 1024,
+      "height": 679,
+      "size": 45718
+    },
+    "optimized": [
+      {
+        "src": "/optimized/automatyzacjaprocesow-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 212,
+        "size": 6550
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 424,
+        "size": 14166
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 679,
+        "size": 22948
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 212,
+        "size": 7038
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 424,
+        "size": 14203
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 679,
+        "size": 26099
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 212,
+        "size": 9222
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 424,
+        "size": 22607
+      },
+      {
+        "src": "/optimized/automatyzacjaprocesow-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 679,
+        "size": 39916
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAMAAAAGcixRAAAAD1BMVEX3+/zr8/be6u7J2uC5ztSufyGRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALUlEQVR4nCWLAQoAQBABGf7/5sueUpOG9GN7tQ0MgSRYMqQNs5K2Pdz4cca9Hg9/AHeCoLUWAAAAAElFTkSuQmCC"
+  },
+  "medycynaai": {
+    "original": {
+      "src": "/medycynaai.png",
+      "width": 986,
+      "height": 622,
+      "size": 1217166
+    },
+    "optimized": [
+      {
+        "src": "/optimized/medycynaai-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 202,
+        "size": 8504
+      },
+      {
+        "src": "/optimized/medycynaai-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 404,
+        "size": 20642
+      },
+      {
+        "src": "/optimized/medycynaai-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 202,
+        "size": 10125
+      },
+      {
+        "src": "/optimized/medycynaai-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 404,
+        "size": 23129
+      },
+      {
+        "src": "/optimized/medycynaai-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 202,
+        "size": 11623
+      },
+      {
+        "src": "/optimized/medycynaai-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 404,
+        "size": 30991
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAMAAADNLv/0AAAAOVBMVEWxra1vm7azucB4lajOvLCarbs1V2vFsqtSepOIqb9XaXc/ZXxhjafApZiUmaC8moyKf31tiJqijIU3Hax5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAO0lEQVR4nB3ISRIAIQgEsGYREPf5/2On9JYKLEhORDNDSsGUHs2Q0x2lUg/kXgPXhP2t8b4C7qqqzPwDOjEBqXN/A7gAAAAASUVORK5CYII="
+  },
+  "logo transparent": {
+    "original": {
+      "src": "/logo transparent.png",
+      "width": 1024,
+      "height": 1536,
+      "size": 2052957
+    },
+    "optimized": [
+      {
+        "src": "/optimized/logo transparent-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 480,
+        "size": 9216
+      },
+      {
+        "src": "/optimized/logo transparent-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 960,
+        "size": 24722
+      },
+      {
+        "src": "/optimized/logo transparent-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1536,
+        "size": 41424
+      },
+      {
+        "src": "/optimized/logo transparent-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 480,
+        "size": 7031
+      },
+      {
+        "src": "/optimized/logo transparent-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 960,
+        "size": 14404
+      },
+      {
+        "src": "/optimized/logo transparent-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1536,
+        "size": 19934
+      },
+      {
+        "src": "/optimized/logo transparent-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 480,
+        "size": 4070
+      },
+      {
+        "src": "/optimized/logo transparent-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 960,
+        "size": 9758
+      },
+      {
+        "src": "/optimized/logo transparent-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1536,
+        "size": 17478
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAMAAABPErQ/AAAABlBMVEXy9vb29vdJMsO9AAAAAnRSTlMCHFCk8/UAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAUSURBVHicY2DADRgZYTSEAePjAwABfwAIjX6fsgAAAABJRU5ErkJggg=="
+  },
+  "grafikaaboutus": {
+    "original": {
+      "src": "/grafikaaboutus.png",
+      "width": 1024,
+      "height": 1024,
+      "size": 273073
+    },
+    "optimized": [
+      {
+        "src": "/optimized/grafikaaboutus-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 9730
+      },
+      {
+        "src": "/optimized/grafikaaboutus-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 21758
+      },
+      {
+        "src": "/optimized/grafikaaboutus-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 38632
+      },
+      {
+        "src": "/optimized/grafikaaboutus-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 7901
+      },
+      {
+        "src": "/optimized/grafikaaboutus-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 16553
+      },
+      {
+        "src": "/optimized/grafikaaboutus-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 21141
+      },
+      {
+        "src": "/optimized/grafikaaboutus-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 12783
+      },
+      {
+        "src": "/optimized/grafikaaboutus-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 30446
+      },
+      {
+        "src": "/optimized/grafikaaboutus-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 57840
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAADFBMVEUGBgYaGhotLS1BQkLTum6MAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAL0lEQVR4nF3MQQoAIAwDwSb7/z9LjRV0T1MoqXpSd2gcSiaWDeCP23lWH7Nwt6YFFC0AXW5ZTKUAAAAASUVORK5CYII="
+  },
+  "flagaeu": {
+    "original": {
+      "src": "/flagaeu.png",
+      "width": 1200,
+      "height": 800,
+      "size": 26788
+    },
+    "optimized": [
+      {
+        "src": "/optimized/flagaeu-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 213,
+        "size": 3616
+      },
+      {
+        "src": "/optimized/flagaeu-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 427,
+        "size": 7524
+      },
+      {
+        "src": "/optimized/flagaeu-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 683,
+        "size": 12578
+      },
+      {
+        "src": "/optimized/flagaeu-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 213,
+        "size": 2766
+      },
+      {
+        "src": "/optimized/flagaeu-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 427,
+        "size": 4784
+      },
+      {
+        "src": "/optimized/flagaeu-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 683,
+        "size": 7411
+      },
+      {
+        "src": "/optimized/flagaeu-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 213,
+        "size": 5035
+      },
+      {
+        "src": "/optimized/flagaeu-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 427,
+        "size": 10791
+      },
+      {
+        "src": "/optimized/flagaeu-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 683,
+        "size": 18787
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAMAAAAGcixRAAAABlBMVEUDNJgOO5G+gn2MAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAHElEQVR4nGNgYGBgYGQEkWAGCGAy4UqwK4BJAwAFHQAhSkmN2wAAAABJRU5ErkJggg=="
+  },
+  "etycznedylematyaizmedycyna": {
+    "original": {
+      "src": "/etycznedylematyaizmedycyna.png",
+      "width": 1024,
+      "height": 1024,
+      "size": 1466422
+    },
+    "optimized": [
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 24784
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 63444
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 88274
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 20907
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 40973
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 39303
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 10945
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 27604
+      },
+      {
+        "src": "/optimized/etycznedylematyaizmedycyna-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 48714
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAACVBMVEXS0tTR09TR1NWDgUvCAAAAA3RSTlMIITfARyWKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALklEQVR4nE3KAQoAQAgCQdf/P/owC04ohlLakDHMFnZ3achnDpUUuBTt1x+ve3kSKwBLA4pG7wAAAABJRU5ErkJggg=="
+  },
+  "avatar-chatbota": {
+    "original": {
+      "src": "/avatar-chatbota.png",
+      "width": 1024,
+      "height": 1024,
+      "size": 1378739
+    },
+    "optimized": [
+      {
+        "src": "/optimized/avatar-chatbota-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 15620
+      },
+      {
+        "src": "/optimized/avatar-chatbota-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 43004
+      },
+      {
+        "src": "/optimized/avatar-chatbota-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 76580
+      },
+      {
+        "src": "/optimized/avatar-chatbota-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 9082
+      },
+      {
+        "src": "/optimized/avatar-chatbota-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 16475
+      },
+      {
+        "src": "/optimized/avatar-chatbota-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 23351
+      },
+      {
+        "src": "/optimized/avatar-chatbota-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 6817
+      },
+      {
+        "src": "/optimized/avatar-chatbota-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 14090
+      },
+      {
+        "src": "/optimized/avatar-chatbota-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 22450
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAD1BMVEX8/Pz9/f37+/v9/f39/f2eVxHfAAAABXRSTlNRPQMaLEXq6NcAAAAJcEhZcwAACxMAAAsTAQCanBgAAAA5SURBVHicJY3JDQAwDMLMsf/MVWg+scAS2I4U2zgVqDEHgJS9rhhl0g8XT7tDZI7U4OM2MTdxA/YDIcYAoVOc+aEAAAAASUVORK5CYII="
+  },
+  "aiwobronnosci": {
+    "original": {
+      "src": "/aiwobronnosci.png",
+      "width": 1024,
+      "height": 1024,
+      "size": 329545
+    },
+    "optimized": [
+      {
+        "src": "/optimized/aiwobronnosci-320.webp",
+        "format": "webp",
+        "width": 320,
+        "height": 320,
+        "size": 24096
+      },
+      {
+        "src": "/optimized/aiwobronnosci-640.webp",
+        "format": "webp",
+        "width": 640,
+        "height": 640,
+        "size": 63696
+      },
+      {
+        "src": "/optimized/aiwobronnosci-1024.webp",
+        "format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "size": 105946
+      },
+      {
+        "src": "/optimized/aiwobronnosci-320.avif",
+        "format": "avif",
+        "width": 320,
+        "height": 320,
+        "size": 16925
+      },
+      {
+        "src": "/optimized/aiwobronnosci-640.avif",
+        "format": "avif",
+        "width": 640,
+        "height": 640,
+        "size": 33765
+      },
+      {
+        "src": "/optimized/aiwobronnosci-1024.avif",
+        "format": "avif",
+        "width": 1024,
+        "height": 1024,
+        "size": 48049
+      },
+      {
+        "src": "/optimized/aiwobronnosci-320.jpg",
+        "format": "jpeg",
+        "width": 320,
+        "height": 320,
+        "size": 11975
+      },
+      {
+        "src": "/optimized/aiwobronnosci-640.jpg",
+        "format": "jpeg",
+        "width": 640,
+        "height": 640,
+        "size": 27376
+      },
+      {
+        "src": "/optimized/aiwobronnosci-1024.jpg",
+        "format": "jpeg",
+        "width": 1024,
+        "height": 1024,
+        "size": 43984
+      }
+    ],
+    "blurPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAADFBMVEX4+fn7+/v7+/v7+/vMBPxdAAAABHRSTlMKK2BCFRlk5AAAAAlwSFlzAAALEwAACxMBAJqcGAAAADFJREFUeJxNi0EOACAMwoD+/88GMxd7KgSkH+O1xFIjSbCrBhqq7mS0k/B+o+25t+UAFUYAaBXtz8UAAAAASUVORK5CYII="
+  }
+}
